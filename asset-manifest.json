@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/AkarshGagan/QuizApp/static/css/main.31cf686a.css",
-    "main.js": "/AkarshGagan/QuizApp/static/js/main.f7c9aaab.js",
-    "static/media/logo.svg": "/AkarshGagan/QuizApp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/AkarshGagan/QuizApp/index.html",
-    "main.31cf686a.css.map": "/AkarshGagan/QuizApp/static/css/main.31cf686a.css.map",
-    "main.f7c9aaab.js.map": "/AkarshGagan/QuizApp/static/js/main.f7c9aaab.js.map"
+    "main.css": "./static/css/main.31cf686a.css",
+    "main.js": "./static/js/main.a07e51b2.js",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "./index.html",
+    "main.31cf686a.css.map": "./static/css/main.31cf686a.css.map",
+    "main.a07e51b2.js.map": "./static/js/main.a07e51b2.js.map"
   },
   "entrypoints": [
     "static/css/main.31cf686a.css",
-    "static/js/main.f7c9aaab.js"
+    "static/js/main.a07e51b2.js"
   ]
 }

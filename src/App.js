@@ -47,7 +47,7 @@ function reducer(state, action) {
     case "nextQuestion":
       return {
         ...state,
-        index: state.index++,
+        index: state.index + 1,
         answer: null,
       };
     case "finished":

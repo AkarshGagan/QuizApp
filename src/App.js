@@ -81,7 +81,7 @@ function App() {
   useEffect(function () {
     async function getdata() {
       try {
-        const result = await fetch("/Questions.json");
+        const result = await fetch(`${process.env.PUBLIC_URL}/Questions.json`);
         console.log(result, "hj");
         if (!result.ok) {
           throw new Error("HTTP error");

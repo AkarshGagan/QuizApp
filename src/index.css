@@ -1,10 +1,10 @@
 :root {
-  --color-darkest: #343a40;
-  --color-dark: #495057;
+  --color-darkest: #085274;
+  --color-dark: #39382d;
   --color-medium: #ced4da;
-  --color-light: #f1f3f5;
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
+  --color-light: #ffffff;
+  --color-theme: #fbc524;
+  --color-accent: #ffffff;
   --color-red: #ff0000;
 }
 
@@ -25,7 +25,13 @@ html {
 body {
   min-height: 100vh;
   color: var(--color-light);
-  background-color: var(--color-darkest);
+  background: rgb(40, 34, 142);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 34, 142, 1) 0%,
+    rgba(38, 38, 184, 1) 26%,
+    rgba(0, 212, 255, 1) 100%
+  );
   padding: 2.5rem;
 }
 
@@ -43,8 +49,12 @@ body {
   justify-content: center;
 }
 .Timer .btn {
-  background-color: #1098ad;
+  background-color: rgb(61, 61, 255);
+  color: var(--color-dark);
   width: 100%;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  color: white;
 }
 
 .app {
@@ -101,7 +111,7 @@ h3 {
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 2.4rem;
   text-align: center;
@@ -119,12 +129,12 @@ h4 {
 }
 
 .progress {
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   display: grid;
   justify-content: space-between;
   gap: 1.2rem;
   grid-template-columns: auto auto;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: var(--color-medium);
 }
 
@@ -178,15 +188,19 @@ progress {
 }
 
 .btn-option {
+  padding: 1rem;
   margin: 0 auto;
   width: min(80%, 450px);
   text-align: left;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .btn-option.correct {
   background-color: var(--color-theme);
   border: 2px solid var(--color-theme);
-  color: var(--color-light);
+  color: var(--color-dark);
+  border: 1px solid rgb(0, 0, 0);
 }
 .btn-option.wrong {
   background-color: var(--color-accent);
@@ -195,7 +209,7 @@ progress {
 }
 .btn-option.error {
   background-color: rgb(248, 70, 70);
-  border: 2px solid rgb(248, 70, 70);
+  border: 2px solid rgb(255, 40, 40);
 }
 .answer {
   transform: scale(1.1);
@@ -203,7 +217,7 @@ progress {
 
 .result {
   background-color: var(--color-theme);
-  color: var(--color-light);
+  color: var(--color-dark);
   font-size: 1.9rem;
   padding: 1.2rem;
 }
@@ -281,7 +295,7 @@ progress {
 }
 
 .btn3 {
-  background-color: hsl(210, 17%, 95%, 0.2);
+  background-color: hsla(211, 41%, 25%, 0.2);
   color: white;
   font-weight: 800;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -290,8 +304,13 @@ progress {
 .next {
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 20rem;
+  right: 3rem;
+}
+.next .btn {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  padding: 1rem 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -308,24 +327,32 @@ progress {
     font-size: 2rem;
   }
   h4 {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    padding: 1rem 0;
   }
   .btn {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .start button {
-    background-color: #1098ad;
+    background-color: var(--color-theme);
+    color: var(--color-dark);
+    font-weight: 700;
     font-size: 2rem;
+    border: 1px solid white;
   }
   .progress {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   .options {
     margin-bottom: 1.6rem;
   }
 }
 @media (max-width: 480px) {
+  h4 {
+    font-size: 1.2rem;
+    padding: 0;
+  }
   h1 {
     font-size: 2rem;
   }
@@ -336,7 +363,16 @@ progress {
     font-size: 1.5rem;
   }
   .start button {
-    background-color: #1098ad;
     font-size: 1.5rem;
+  }
+  .Timer .btn {
+    padding: 0.5rem 2rem;
+  }
+  .next .btn {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
+  .progress {
+    margin-bottom: 3rem;
   }
 }
